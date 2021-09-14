@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfViewModelCommandPractice", "WpfViewModelCommandPractice\WpfViewModelCommandPractice.csproj", "{078D072A-F9BB-4544-8C8B-97FF9A9506BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078D072A-F9BB-4544-8C8B-97FF9A9506BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078D072A-F9BB-4544-8C8B-97FF9A9506BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078D072A-F9BB-4544-8C8B-97FF9A9506BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078D072A-F9BB-4544-8C8B-97FF9A9506BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB932997-5396-4B05-9BF4-C6A925077422}
+	EndGlobalSection
+EndGlobal
