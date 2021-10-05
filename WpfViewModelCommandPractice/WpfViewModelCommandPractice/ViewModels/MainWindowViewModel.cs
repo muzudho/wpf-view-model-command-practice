@@ -1,12 +1,12 @@
 ﻿namespace WpfViewModelCommandPractice.ViewModels
 {
     using Livet.Commands;
-    using System;
     using System.Diagnostics;
+    using System.Windows;
 
     public class MainWindowViewModel
     {
-        private ViewModelCommand _calledHello;
+        private ViewModelCommand _helloCommand;
 
         /// <summary>
         /// ハローと表示するコマンド
@@ -15,11 +15,11 @@
         {
             get
             {
-                if (_calledHello == null)
+                if (_helloCommand == null)
                 {
-                    _calledHello = new ViewModelCommand(Hello);
+                    _helloCommand = new ViewModelCommand(Hello);
                 }
-                return _calledHello;
+                return _helloCommand;
             }
         }
 
@@ -28,8 +28,16 @@
         /// </summary>
         public void Hello()
         {
+            // コンソール出力
             // Console.WriteLine("Hello, world!!"); // デバッグ中は働かなかった
             Trace.WriteLine("Hello, world!!"); // デバッグ中に働いた
+
+            var _result = MessageBox.Show(
+                "ハロー！\nわたしはWindowsデフォルトのメッセージボックスです",
+                "コマンド",
+                MessageBoxButton.OK,
+                MessageBoxImage.Information,
+                MessageBoxResult.OK);
         }
     }
 }
